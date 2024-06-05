@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta Shqiptare</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgb(226, 133, 187), rgb(140, 142, 241), rgb(140, 195, 226));
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .recipe-container {
+            margin: 20px auto;
+            width: 50%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        img {
+            width: 80%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid #9c69df;
+            padding: 8px;
+        }
+        th {
+            background-color: #d69de7;
+        }
+        button {
+            background-color: #8746c4;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6045a0;
+        }
+        .recipe-details {
+            display: none;
+        }
+    </style>
+    <script>
+        function showRecipe(recipe) {
+            const details = document.getElementById(`details-${recipe}`);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Receta Shqiptare sipas Krahinave</h1>
+
+    <div class="recipe-container">
+        <img src="img/bakllava.jpg" alt="Bakllava">
+        <h2>Recetë e Shqipërisë së Mesme: Bakllava</h2>
+        <button onclick="showRecipe('bakllava')">Shfaq Recetën</button>
+        <div id="details-bakllava" class="recipe-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Përbërësit</th>
+                        <th>Masa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pete bakllavaje</td>
+                        <td>500g</td>
+                    </tr>
+                    <tr>
+                        <td>Arra të grira</td>
+                        <td>500g</td>
+                    </tr>
+                    <tr>
+                        <td>Gjalpë i shkrirë</td>
+                        <td>300g</td>
+                    </tr>
+                    <tr>
+                        <td>Sheqer</td>
+                        <td>1kg</td>
+                    </tr>
+                    <tr>
+                        <td>Ujë</td>
+                        <td>500ml</td>
+                    </tr>
+                    <tr>
+                        <td>Limon</td>
+                        <td>1 kokërr</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Përgatitja:</h3>
+            <p>
+                Lyejeni tepsinë me gjalpë të shkrirë dhe vendosni një petë bakllavaje. Lyejeni petën me gjalpë dhe përsëriteni procesin për disa shtresa.
+                Shtoni një shtresë me arra të grira. Vazhdoni të vendosni petë bakllavaje duke i lyer me gjalpë dhe shtoni përsëri një shtresë me arra deri sa të mbarojnë përbërësit.
+                Priteni bakllavanë në forma rombi ose katrore dhe lyejeni sipër me gjalpë të shkrirë. Piqeni në furrë të para-ngrohur në 180°C për rreth 40-50 minuta deri sa të marrë ngjyrë të artë.
+                Ndërkohë, përgatisni sherbetin duke zier sheqerin me ujin dhe lëngun e limonit deri sa të trashet pak. Hidheni sherbetin e ngrohtë mbi bakllavanë e nxehtë dhe lëreni të ftohet para se ta shërbeni.
+            </p>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <img src="img/sheqerpare.jpeg" alt="Sheqerpare">
+        <h2>Recetë e Shqipërisë së Jugut: Sheqerpare</h2>
+        <button onclick="showRecipe('sheqerpare')">Shfaq Recetën</button>
+        <div id="details-sheqerpare" class="recipe-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Përbërësit</th>
+                        <th>Masa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Miell</td>
+                        <td>500g</td>
+                    </tr>
+                    <tr>
+                        <td>Gjalpë</td>
+                        <td>250g</td>
+                    </tr>
+                    <tr>
+                        <td>Sheqer pluhur</td>
+                        <td>100g</td>
+                    </tr>
+                    <tr>
+                        <td>Vezë</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Pluhur për pjekje</td>
+                        <td>1 pako</td>
+                    </tr>
+                    <tr>
+                        <td>Vanilje</td>
+                        <td>1 lugë çaji</td>
+                    </tr>
+                    <tr>
+                        <td>Sherbet</td>
+                        <td>500ml</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Përgatitja:</h3>
+            <p>
+                Në një enë të madhe, përziejini gjalpin e zbutur me sheqerin pluhur deri sa të bëhen kremozë. Shtoni vezët, vaniljen dhe përziejini mirë.
+                Shtoni miellin dhe pluhurin për pjekje gradualisht duke e përzier derisa të formohet një brumë i butë. Formoni toptha të vegjël dhe vendosini në një tepsi të lyer me gjalpë.
+                Piqini në furrë të para-ngrohur në 180°C për rreth 20 minuta deri sa të marrin një ngjyrë të artë. Ndërkohë, përgatisni sherbetin duke zier sheqerin me ujin dhe lëngun e limonit deri sa të trashet pak.
+                Sapo të nxirren nga furra, hidhini sherbetin e nxehtë mbi sheqerparet e nxehta dhe lëreni të ftohen.
+            </p>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <img src="img/Kadaif.jpeg" alt="Kadaif">
+        <h2>Recetë e Shqipërisë Veriore: Kadaif</h2>
+        <button onclick="showRecipe('kadaif')">Shfaq Recetën</button>
+        <div id="details-kadaif" class="recipe-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Përbërësit</th>
+                        <th>Masa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kadaif</td>
+                        <td>500g</td>
+                    </tr>
+                    <tr>
+                        <td>Gjalpë</td>
+                        <td>250g</td>
+                    </tr>
+                    <tr>
+                        <td>Arra të grira</td>
+                        <td>300g</td>
+                    </tr>
+                    <tr>
+                        <td>Sheqer</td>
+                        <td>1kg</td>
+                    </tr>
+                    <tr>
+                        <td>Ujë</td>
+                        <td>500ml</td>
+                    </tr>
+                    <tr>
+                        <td>Limon</td>
+                        <td>1 kokërr</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Përgatitja:</h3>
+            <p>
+                Lyejeni tepsinë me gjalpë të shkrirë dhe vendosni një shtresë kadaifi. Spërkateni kadaifin me arra të grira dhe vendosni përsëri një shtresë kadaifi.
+                Priteni kadaifin në forma të vogla katrore ose drejtkëndëshe. Shkrini gjalpin dhe hidheni mbi kadaifin në tepsi.
+                Piqeni në furrë të para-ngrohur në 180°C për rreth 40-50 minuta deri sa të marrë një ngjyrë të artë. Ndërkohë, përgatisni sherbetin duke zier sheqerin me ujin dhe lëngun e limonit deri sa të trashet pak.
+                Hidheni sherbetin e ngrohtë mbi kadaifin e nxehtë dhe lëreni të ftohet para se ta shërbeni.
+            </p>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <img src="img/Shendetlie.jpeg" alt="Shendetlie">
+        <h2>Recetë e Shqipërisë së Mesme: Shendetlie</h2>
+        <button onclick="showRecipe('shendetlie')">Shfaq Recetën</button>
+        <div id="details-shendetlie" class="recipe-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Përbërësit</th>
+                        <th>Masa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Miell</td>
+                        <td>500g</td>
+                    </tr>
+                    <tr>
+                        <td>Mjalte</td>
+                        <td>200g</td>
+                    </tr>
+                    <tr>
+                        <td>Sheqer</td>
+                        <td>150g</td>
+                    </tr>
+                    <tr>
+                        <td>Vaj ulliri</td>
+                        <td>200ml</td>
+                    </tr>
+                    <tr>
+                        <td>Veze</td>
+                        <td>3 kokrra</td>
+                    </tr>
+                    <tr>
+                        <td>Pluhur për pjekje</td>
+                        <td>1 pako</td>
+                    </tr>
+                    <tr>
+                        <td>Vanilje</td>
+                        <td>1 lugë çaji</td>
+                    </tr>
+                    <tr>
+                        <td>Kanelle</td>
+                        <td>1 lugë çaji</td>
+                    </tr>
+                    <tr>
+                        <td>Sherbet</td>
+                        <td>500ml</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Përgatitja:</h3>
+            <p>
+                Në një enë të madhe, përziejini vajin, sheqerin dhe mjaltin deri sa të bëhen kremozë. Shtoni vezët, vaniljen dhe përziejini mirë.
+                Shtoni miellin, pluhurin për pjekje dhe kanellën gradualisht duke e përzier derisa të formohet një brumë i butë. Vendosni brumin në një tepsi të lyer me gjalpë dhe piqeni në furrë të para-ngrohur në 180°C për rreth 30-35 minuta deri sa të marrë një ngjyrë të artë.
+                Ndërkohë, përgatisni sherbetin duke zier sheqerin me ujin dhe lëngun e limonit deri sa të trashet pak. Sapo të nxirret nga furra, hidhini sherbetin e nxehtë mbi shendetlien e nxehtë dhe lëreni të ftohet.
+            </p>
+        </div>
+    </div>
+    <a href="https://youtu.be/AmJ0eJ5cDAw?si=Ze23E5-ybqpesCmx">Video e recetes per bakllava</a>
+    <a href="https://youtu.be/0snDy0WxWnU?si=a5n_ejzhKM0nwd2w">Video e recetes per sheqerpare</a>
+    <a href="https://youtu.be/Y4kZl4AgI34?si=inB8UcUcyr_DZx8u">Video e recetes per kadaif</a>
+    <a href="https://youtu.be/bl7vbm545jI?si=dVbMqgiOb7GXPImV">Video e recetes per shendetlie</a>
+    <h3>Punoi: Albjona Myftarago, Luena Hoxhallari, Rea Sefedini, Xhensila Mydini.</h3>
+</body>
+</html>
